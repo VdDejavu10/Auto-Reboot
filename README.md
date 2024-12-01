@@ -14,4 +14,5 @@ crontab -e
 */5 * * * * bash /root/auto_reboot.sh >> /root/auto_reboot.log 2>&1
 
 Auto delete log setiap jam 00.00
+
 0 0 * * * bash sed -i 'd' /root/auto_reboot.log
